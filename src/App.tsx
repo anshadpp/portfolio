@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import { queryClient } from "@/lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Portfolio from "@/pages/Portfolio";
 import NotFound from "@/pages/not-found";
 
-function Router() {
+function Routes() {
   return (
     <Switch>
       <Route path="/" component={Portfolio} />
@@ -22,7 +22,10 @@ function App() {
       <TooltipProvider>
         <ThemeProvider>
           <Toaster />
-          <Router />
+          {/* 👇 Add base="/portfolio" here */}
+          <WouterRouter base="/portfolio">
+            <Routes />
+          </WouterRouter>
         </ThemeProvider>
       </TooltipProvider>
     </QueryClientProvider>
@@ -30,6 +33,7 @@ function App() {
 }
 
 export default App;
+
 // export default function App() {
 //   return (
 //     <div className="min-h-screen flex items-center justify-center bg-red-500 text-white">
