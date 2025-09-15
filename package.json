@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/anshadpp/portfolio.git"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
