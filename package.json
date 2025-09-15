@@ -8,9 +8,10 @@
     "build": "cross-env NODE_ENV=production vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/anshadpp/portfolio.git"
+    "deploy": "gh-pages -d dist -r https://github.com/anshadpp/portfolio.git -b gh-pages"
   },
   "dependencies": {
+    "22": "^0.0.0",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
