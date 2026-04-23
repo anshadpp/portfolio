@@ -110,6 +110,63 @@
       0 0 60px -20px hsl(var(--accent-2) / 0.25);
   }
 
+  /* Animated border beam: a glowing arc travels around the card edge on hover */
+  .hover-elevate {
+    isolation: isolate;
+  }
+  .hover-elevate::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.2px;
+    background: conic-gradient(
+      from var(--beam-angle),
+      transparent 0deg,
+      transparent 280deg,
+      hsl(var(--accent-1)) 320deg,
+      hsl(var(--accent-2)) 345deg,
+      transparent 360deg
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+  }
+  .hover-elevate:hover::before {
+    opacity: 1;
+    animation: beam-spin 2.8s linear infinite;
+  }
+
+  /* Scan line sweep — periodic horizontal beam in Hero */
+  .scan-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--accent-1) / 0.6) 40%,
+      hsl(var(--accent-2) / 0.6) 60%,
+      transparent 100%
+    );
+    box-shadow: 0 0 12px hsl(var(--accent-1) / 0.6);
+    pointer-events: none;
+    animation: scan-sweep 7s ease-in-out infinite;
+  }
+
+  /* Magnetic target — updated via JS transform; keep smooth return */
+  .magnetic {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
   /* Gradient text (static) */
   .gradient-text {
     background: linear-gradient(120deg, hsl(var(--accent-1)), hsl(var(--accent-2)));
@@ -231,11 +288,16 @@
     .hero-stagger-image,
     .spin-slow,
     .pulse-glow,
-    .gradient-text-animated {
+    .gradient-text-animated,
+    .scan-line,
+    .magnetic {
       animation: none !important;
       transition: none !important;
       opacity: 1 !important;
       transform: none !important;
+    }
+    .hover-elevate::before {
+      animation: none !important;
     }
   }
 }
@@ -271,4 +333,23 @@
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+/* @property lets us animate a CSS variable — required for the border beam */
+@property --beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes beam-spin {
+  from { --beam-angle: 0deg; }
+  to   { --beam-angle: 360deg; }
+}
+
+@keyframes scan-sweep {
+  0%   { top: -4%; opacity: 0; }
+  6%   { opacity: 1; }
+  94%  { opacity: 1; }
+  100% { top: 104%; opacity: 0; }
 }

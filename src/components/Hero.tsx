@@ -26,6 +26,9 @@ export function Hero() {
       {/* Particle network overlay */}
       <HeroParticles />
 
+      {/* Periodic scan line sweep */}
+      <div className="scan-line" aria-hidden="true" />
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -55,18 +58,20 @@ export function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 hero-stagger hero-delay-5">
-              <Button 
+              <Button
                 onClick={scrollToProjects}
                 size="lg"
                 data-testid="button-view-projects"
+                className="magnetic"
               >
                 View Projects
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={scrollToContact}
                 size="lg"
                 data-testid="button-get-in-touch"
+                className="magnetic"
               >
                 Get in Touch
               </Button>

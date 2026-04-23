@@ -149,9 +149,10 @@ export function Contact() {
                 <p className="text-muted-foreground mb-4" data-testid="text-cta-description">
                   Let's discuss how I can help bring your ideas to life.
                 </p>
-                <Button 
+                <Button
                   onClick={() => window.open('mailto:anshad.pp36@gmail.com', '_blank')}
                   data-testid="button-cta-email"
+                  className="magnetic"
                 >
                   <Mail className="h-4 w-4 mr-2" />
                   Send Email

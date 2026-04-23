@@ -65,11 +65,44 @@ export default function Portfolio() {
       });
     }
 
+    // Magnetic pull on buttons (fine-pointer only)
+    let onMagneticMove: ((e: MouseEvent) => void) | null = null;
+    const magneticEls: HTMLElement[] = [];
+    if (hasFinePointer) {
+      magneticEls.push(
+        ...Array.from(document.querySelectorAll<HTMLElement>(".magnetic")),
+      );
+      onMagneticMove = (e: MouseEvent) => {
+        magneticEls.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const cy = rect.top + rect.height / 2;
+          const dx = e.clientX - cx;
+          const dy = e.clientY - cy;
+          const dist = Math.hypot(dx, dy);
+          const RADIUS = 110;
+          if (dist < RADIUS) {
+            const pull = (1 - dist / RADIUS) * 0.3;
+            el.style.transform = `translate(${dx * pull}px, ${dy * pull}px)`;
+          } else if (el.style.transform) {
+            el.style.transform = "";
+          }
+        });
+      };
+      window.addEventListener("mousemove", onMagneticMove, { passive: true });
+    }
+
     return () => {
       observer.disconnect();
       cardListeners.forEach((l) => {
         l.el.removeEventListener("mousemove", l.onMove);
         l.el.removeEventListener("mouseleave", l.onLeave);
+      });
+      if (onMagneticMove) {
+        window.removeEventListener("mousemove", onMagneticMove);
+      }
+      magneticEls.forEach((el) => {
+        el.style.transform = "";
       });
     };
   }, []);
