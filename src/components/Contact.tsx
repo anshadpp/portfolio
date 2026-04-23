@@ -48,10 +48,10 @@ export function Contact() {
     <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="heading-contact">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight gradient-text" data-testid="heading-contact">
             Get In Touch
           </h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-8"></div>
+          <div className="w-24 gradient-divider mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-contact-description">
             I'm always open to discussing new opportunities, interesting projects, 
             or just having a conversation about technology. Let's connect!

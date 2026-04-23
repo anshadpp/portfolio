@@ -8,11 +8,11 @@ const skillCategories = [
   },
   {
     category: "Backend Development",
-    skills: ["Spring Boot", "Django"]
+    skills: ["Spring Boot", "Node.js", "Hono.js", "Django"]
   },
   {
     category: "Frontend Development",
-    skills: ["HTML", "CSS", "JavaScript", "AJAX", "jQuery", "JSP"]
+    skills: ["React", "HTML", "CSS", "JavaScript", "TypeScript"]
   },
   {
     category: "Mobile Development",
@@ -33,10 +33,10 @@ export function Skills() {
     <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="heading-skills">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight gradient-text" data-testid="heading-skills">
             Technical Skills
           </h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-8"></div>
+          <div className="w-24 gradient-divider mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-skills-description">
             A comprehensive overview of my technical expertise across various domains of software development.
           </p>

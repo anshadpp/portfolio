@@ -20,7 +20,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <ThemeProvider>
+        <ThemeProvider defaultTheme="dark">
           <Toaster />
           {/* 👇 Add base="/portfolio" here */}
           <WouterRouter base="/portfolio">

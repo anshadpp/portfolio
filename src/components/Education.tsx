@@ -7,10 +7,10 @@ export function Education() {
     <section id="education" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="heading-education">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight gradient-text" data-testid="heading-education">
             Education
           </h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-8"></div>
+          <div className="w-24 gradient-divider mx-auto mb-8"></div>
         </div>
         
         <div className="max-w-4xl mx-auto">

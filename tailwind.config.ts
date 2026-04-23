@@ -28,6 +28,10 @@ export default {
           DEFAULT: "hsl(var(--muted) / <alpha-value>)",
           foreground: "hsl(var(--muted-foreground) / <alpha-value>)",
         },
+        accent: {
+          1: "hsl(var(--accent-1) / <alpha-value>)",
+          2: "hsl(var(--accent-2) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

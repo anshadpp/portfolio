@@ -29,10 +29,10 @@ export function About() {
     <section id="about" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4" data-testid="heading-about">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight gradient-text" data-testid="heading-about">
             About Me
           </h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-8"></div>
+          <div className="w-24 gradient-divider mx-auto mb-8"></div>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -43,16 +43,25 @@ export function About() {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p data-testid="text-profile-summary">
-                Full Stack Developer with strong backend expertise in Java and Spring Boot, 
-                and intermediate mobile development skills using Dart & Flutter. 
-                Experienced building REST APIs, database-driven services, token-based authentication, 
-                and cross-platform apps.
+                Full Stack Developer with 1.5+ years building production systems in
+                Java, Spring Boot, and Flutter. I designed and deployed the backend
+                for Peninsula — a cross-platform football academy app live on the
+                Apple App Store — serving an international client in Saudi Arabia.
+                The backend exposes 50+ REST endpoints on Spring Boot + MySQL with
+                token-based authentication, S3 media storage, and Firebase push.
               </p>
               <p data-testid="text-profile-additional">
-                Basic working knowledge of AWS and Firebase; familiar with Python and JavaScript. 
-                Currently working as a Junior Full Stack Developer at Incube Innovation Incubator LLP, 
-                where I lead mobile application development and collaborate with cross-functional teams 
-                to deliver high-performance solutions.
+                Based at Incube Innovation Incubator LLP (Hyderabad), promoted
+                from Trainee to Junior Full Stack Developer after delivering the
+                Peninsula app. Currently leading a WhatsApp Business API
+                integration and companion app at Incube, and in parallel engaged
+                on an independent contract (routed via Incube) with Travel360
+                (Dubai) — building the first-phase MVP of an early-stage travel
+                marketplace on Node.js + Hono.js + React. Comfortable across the
+                stack — REST API design, MySQL schema, Flutter state management,
+                AWS/Firebase/S3 — and now expanding into the Node/TypeScript
+                ecosystem. Open to remote opportunities globally, flexible with
+                timezone.
               </p>
             </div>
           </div>
