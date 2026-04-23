@@ -78,25 +78,6 @@ const projects: Project[] = [
       icon: "github",
     },
   },
-  {
-    title: "WebSocket Broadcast Chat",
-    clientLabel: "Personal Project",
-    duration: "November 2024",
-    description:
-      "A real-time chat backend built with Java WebSockets demonstrating broadcast networking patterns — multi-client connections, concurrent message delivery, and clean session handling.",
-    achievements: [
-      "Implemented a WebSocket server that broadcasts incoming messages to all connected clients in real time",
-      "Handled concurrent client sessions with thread-safe message delivery",
-      "Practiced low-level networking and Java concurrency primitives",
-      "Open-source reference for realtime backend patterns",
-    ],
-    technologies: ["Java", "WebSockets", "Networking", "Concurrency", "Git"],
-    link: {
-      label: "View on GitHub",
-      url: "https://github.com/anshadpp/chat",
-      icon: "github",
-    },
-  },
 ];
 
 export function Projects() {
