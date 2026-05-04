@@ -20,9 +20,9 @@ const contactMethods = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Kerala, India",
+    value: "Remote-first · Open Worldwide",
     href: null,
-    description: "Currently based in Kerala"
+    description: "Open to remote roles worldwide, flexible with timezone"
   }
 ];
 

@@ -35,7 +35,7 @@ export function Hero() {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-muted-foreground hero-stagger hero-delay-1">
               <MapPin className="h-4 w-4" />
-              <span data-testid="text-location">Kerala, India</span>
+              <span data-testid="text-location">Remote-first · Open Worldwide</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 tracking-tight hero-stagger hero-delay-2">
