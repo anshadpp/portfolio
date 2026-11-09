@@ -4,11 +4,11 @@ import { Card } from "@/components/ui/card";
 const skillCategories = [
   {
     category: "Programming Languages",
-    skills: ["Java", "Dart", "Python", "JavaScript", "C"]
+    skills: ["Java", "Dart", "Python (Django APIs)", "TypeScript", "JavaScript", "C (fundamentals)", "C++ (basic)"]
   },
   {
     category: "Backend Development",
-    skills: ["Spring Boot", "Node.js", "Hono.js", "Django"]
+    skills: ["Spring Boot", "NestJS", "Node.js", "Hono.js", "Django"]
   },
   {
     category: "Frontend Development",
@@ -24,7 +24,7 @@ const skillCategories = [
   },
   {
     category: "Databases",
-    skills: ["MySQL", "Hibernate"]
+    skills: ["PostgreSQL", "MySQL", "SQLite", "Hibernate"]
   }
 ];
 

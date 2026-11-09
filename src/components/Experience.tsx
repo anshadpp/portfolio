@@ -14,6 +14,18 @@ type Job = {
 
 const jobs: Job[] = [
   {
+    title: "Software Developer",
+    company: "Zabnix Private Limited",
+    location: "Perinthalmanna, Kerala, India",
+    duration: "June 2026 – Present",
+    badge: { label: "Current role" },
+    bullets: [
+      "Developing ERP software for pharmaceutical retail and wholesale operations using Flutter, Dart, NestJS and PostgreSQL.",
+      "Contributing to inventory, sales, purchases, accounting and reporting workflows.",
+      "Investigating asynchronous loading, UI responsiveness and frontend/backend integration issues.",
+    ],
+  },
+  {
     title: "Junior Full Stack Developer",
     company: "Travel360",
     location: "Remote · Client registered in Dubai",
@@ -33,7 +45,7 @@ const jobs: Job[] = [
     location: "Hyderabad, India",
     duration: "July 2024 – May 2026",
     badge: { label: "Promoted from Trainee" },
-    note: "Promoted to Junior Full Stack Developer in August 2025 after a 1-year trainee program. Most recent primary employer — delivered product work and an independent client contract (Travel360).",
+    note: "Promoted to Junior Full Stack Developer in August 2025 after a 1-year trainee program. Previously delivered product work and an independent client contract (Travel360).",
     bullets: [
       "Shipped the Peninsula football academy app on the Apple App Store (iOS + Android) for an international client in Saudi Arabia — owned both the Flutter client and the Spring Boot backend (October 2024 – February 2026).",
       "Designed and built 50+ REST API endpoints on Spring Boot backed by MySQL and Hibernate, with token-based authentication and clean schema design.",

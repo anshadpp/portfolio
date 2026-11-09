@@ -35,7 +35,7 @@ export function Hero() {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-muted-foreground hero-stagger hero-delay-1">
               <MapPin className="h-4 w-4" />
-              <span data-testid="text-location">Remote-first · Open Worldwide</span>
+              <span data-testid="text-location">Perinthalmanna, Kerala, India</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 tracking-tight hero-stagger hero-delay-2">
@@ -45,15 +45,14 @@ export function Hero() {
             </h1>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-foreground/90 mb-6 hero-stagger hero-delay-3">
-              <span data-testid="text-title">Full Stack Developer</span>
+              <span data-testid="text-title">Software Developer · Full Stack Engineer</span>
             </h2>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0 hero-stagger hero-delay-4">
               <span data-testid="text-subtitle">
-                Backend-leaning Full Stack Developer. Shipped a cross-platform
-                football academy app on the Apple App Store for an international
-                client — 50+ REST endpoints in Spring Boot, Flutter on the client,
-                AWS & Firebase in the cloud. Open to remote roles worldwide.
+                Currently building pharmaceutical retail and wholesale ERP software
+                with Flutter, NestJS and PostgreSQL at Zabnix. Previously
+                delivered Spring Boot APIs and cross-platform mobile apps.
               </span>
             </p>
             

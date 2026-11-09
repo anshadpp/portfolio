@@ -43,26 +43,16 @@ export function About() {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p data-testid="text-profile-summary">
-                Full Stack Developer with nearly 2 years building production
-                systems in Java, Spring Boot, and Flutter. Designed and deployed
-                the backend for Peninsula — a cross-platform football academy
-                app live on the Apple App Store — serving an international
-                client in Saudi Arabia. The backend exposes 50+ REST endpoints
-                on Spring Boot + MySQL with token-based authentication, S3
-                media storage, and Firebase push.
+                Software Developer with over 2 years of experience building enterprise
+                applications, backend services and cross-platform apps. Currently working
+                at Zabnix Private Limited on pharmaceutical retail and wholesale ERP
+                software with Flutter, Dart, NestJS and PostgreSQL.
               </p>
               <p data-testid="text-profile-additional">
-                Most recently was Junior Full Stack Developer at Incube
-                Innovation Incubator LLP (Hyderabad), promoted from Trainee
-                after delivering the Peninsula app. Also held an independent
-                contract routed via Incube with Travel360 (Dubai) — building
-                the first-phase MVP of an early-stage travel marketplace on
-                Node.js + Hono.js + React, which added TypeScript and the
-                Node ecosystem alongside the core Java/Spring/Flutter skill
-                set. Comfortable across the stack — REST API design, MySQL
-                schema, Flutter state management, AWS/Firebase/S3. Currently
-                open to remote opportunities worldwide; remote-first, flexible
-                with timezone.
+                Previously developed 50+ Java Spring Boot REST APIs and Flutter features
+                at Incube Innovation Incubator LLP, and contributed to a Travel360 MVP
+                through Incube. Experienced in Python/Django API development, debugging,
+                database integration and performance improvements. Exploring C and C++ fundamentals.
               </p>
             </div>
           </div>
